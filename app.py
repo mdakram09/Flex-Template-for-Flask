@@ -13,8 +13,13 @@ app = Flask(__name__)
 def index():
     return render_template('flexindex.html')
 
+@app.route('/wordbeater')
+def wordbeater():
+    return render_template('wordbeater.html')
 
-
+@app.route('/paragraphMeter')
+def paragraphMeter():
+    return render_template('paragraphMeter.html')
 
 
 if __name__ == '__main__':

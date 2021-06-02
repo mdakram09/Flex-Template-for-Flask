@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typing Buddy</title>
+    <script src="{{ url_for('static', filename='js/paragraphMeter.js') }}" async></script>
+    <link rel="icon" type="image/png" href="/fevicon.png" />
+    <link rel="icon" type="image/png" href="fevicon.png" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paragraphMeter.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white ">
+    <!--navbar starts-->
+    <header class="bg-secondary text-center p-3 mb-5">
+        <h1>Paragraph Meter</h1>
+      </header>
+
+
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Check your</strong> typing speed here.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!--navbar ends-->
+    <!-- <header class="masthead" class="mt-2">
+        <h1>Typing Speed Tester</h1>
+    </header> -->
+    <main class="main">
+        <!--<article class="intro">
+            <p>
+                <center>Check your Typing Speed here</center>
+            </p>
+        </article>-->
+        <!-- .intro -->
+        <section class="test-area">
+            <div id="origin-text">
+                <p>Please click on "Start over" button bellow to start typing test <br><strong>REMEMBER THIS TYPING SPEED TRACKER ONLY WORKS IN PC/LAPTOP AND NOT IN MOBILE PHONES</strong></p>
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper" style="border-color: green;">
+                <textarea id="test-area" name="textarea" rows="6"
+                    placeholder="Click here to start typing. The clock starts when you start typing."></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock" style="color: white;">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <!-- <section id="Words">
+                    <div class="wordCount">0 Words</div>
+                </section> -->
+
+                <section id="WordsPerMinute" style="color: white;">
+                    <div class="wpm">0 WPM</div>
+                </section>
+
+                <section id="Accurate">
+                    <div class="accuracy" style="color: white;">100% Accuracy</div>
+                </section>
+
+                <button type="button" class="btn btn-success  rounded-pill" id="reset">Start over</button>
+            </div><!-- .meta -->
+        </section><!-- .test-area -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
