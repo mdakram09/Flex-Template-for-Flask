@@ -21,6 +21,10 @@ def wordbeater():
 def paragraphMeter():
     return render_template('paragraphMeter.html')
 
+@app.route('/keywordBeater')
+def keywordBeater():
+    return render_template('keywordBeater.html')
+
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', debug=True, port=8001)

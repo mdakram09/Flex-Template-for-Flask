@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <title>HTML GAME</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleskeywordBeater.css') }}">
+      <!-- css file is linked -->
+   </head>
+   <body>
+      <!-- header -->
+      <header class="header">
+         <h1>HTML TYPING GAME</h1>
+      </header>
+      <!-- typing section -->
+      <div class="page-container">
+         <p class="top">Attention please!!!!! Type the HTML tag Within
+            <span id="seconds"></span> Seconds
+         </p>
+         <div>
+            <button type="button" id="button">PLAY</button>
+         </div>
+         <h2 id="Tag">Welcome</h2>
+         <input type="text" id="typeTag" placeholder="Type here..." >
+         <h4 id="message"></h4>
+         <!-- time & score columns -->
+         <div class="col1">
+            <h3>Time Left : <span id="time">  0</span></h3>
+         </div>
+         <div class="col2">
+            <h3>Score</h3>
+            <span id="score">0</span>
+         </div>
+         <!-- instruction column -->
+         <div class="instructions">
+            <h3>Instructions</h3>
+            <p>Type each tag in the given time to score.</p>
+            <p>Type the current tag to play again.</p>
+         </div>
+      </div>
+      <script src="{{ url_for('static', filename='js/javascriptkeywordBeater.js') }}"></script> <!-- js file is linked -->
+   </body>
+</html>
+

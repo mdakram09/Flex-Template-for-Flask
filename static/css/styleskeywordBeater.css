@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+/*********************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. COMMON/GENERAL STYLES
+ * 2. HEADER 
+ * 3. body sections 
+ * 4. instructions
+ */
+/* 1. COMMON/GENERAL STYLES */
+html{
+	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Asap', sans-serif;
+    text-align: center;
+    background-color: #f0df9a;
+}
+
+/* 2. HEADER */
+h1{
+    font-size: 60px;
+}
+
+/* 3. body sections */
+h2{
+    font-size: 40px;
+}
+#button{
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+}
+
+#button:hover{
+    background-color:red;
+}
+
+#seconds{
+    color: green;
+    font-weight: bolder;
+}
+
+.col1 h3{
+    color: red;
+}
+
+.col2{
+     color: green;
+    font-weight: bolder;
+}
+
+#typeTag{
+    padding: 10px;
+}
+
+#score{
+    margin-bottom: 20px;
+}
+
+/* 4. instructions */
+.instructions p{
+    text-decoration: underline;
+    font-size: 25px;
+    margin: 0 auto;
+    font-family: 'Amita', cursive;
+}
